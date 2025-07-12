@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divition Result Uploader</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-storage-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Divition Result Uploader</h1>
+        <form id="resultUploadForm">
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" required>
+                    <option value="" disabled selected>Please select a category</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="program">Program:</label>
+                <select id="program" required disabled>
+                    <option value="" disabled selected>Please select a program</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="imageUpload">Please upload a image:</label>
+                <input type="file" id="imageUpload" accept="image/*" required>
+            </div>
+            <button type="submit">Result Upload</button>
+        </form>
+        <p id="message" class="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
