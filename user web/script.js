@@ -303,6 +303,7 @@ async function downloadImage(imageUrl, filename) {
     }
 }
 
+
 // സ്ലൈഡർ ചിത്രങ്ങൾ ലോഡ് ചെയ്യുകയും ഡിസ്പ്ലേ ചെയ്യുകയും ചെയ്യുന്ന ഫംഗ്ഷൻ
 function loadSliderImages() {
     const adSlider = document.getElementById('ad-slider');
